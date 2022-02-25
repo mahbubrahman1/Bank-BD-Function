@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind style -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Bank Management</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="text-4xl text-center mt-16"><span class="font-semibold text-red-400">Bank BD</span> Management System
+        </h2>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 text-white w-2/3 mx-auto mt-12">
+            <div class="bg-green-300 p-6 rounded-md">
+                <h3 class="text-2xl">Deposit</h3>
+                <h1 class="text-5xl">$<span id="deposit-total">00</span></h1>
+            </div>
+            <div class="bg-blue-300 p-6 rounded-md">
+                <h3 class="text-2xl">Withdraw</h3>
+                <h1 class="text-5xl">$<span id="withdraw-total">00</span></h1>
+            </div>
+            <div class="bg-pink-300 p-6 rounded-md">
+                <h3 class="text-2xl">Balance</h3>
+                <h1 class="text-5xl">$<span id="balance-total">5500</span></h1>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 w-2/4 mx-auto mt-12">
+            <div class="bg-orange-100 rounded-md p-6">
+                <h3 class="text-2xl mb-2">Deposit</h3>
+                <input id="deposit-input" class="block mb-2 w-2/3 border-2 border-orange-300 rounded-md pl-2"
+                    type="text" placeholder="Enter deposit amount">
+                <button id="deposit-button" class="bg-orange-400 text-white px-8 py-2 rounded-md">Deposit</button>
+            </div>
+            <div class="bg-teal-100 rounded-md p-6">
+                <h3 class="text-2xl mb-2">Withdraw</h3>
+                <input id="withdraw-input" class="block mb-2 w-2/3 border-2 border-teal-300 rounded-md pl-2" type="text"
+                    placeholder="Enter withdraw amount">
+                <button id="withdraw-button" class="bg-teal-400 text-white px-8 py-2 rounded-md">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- connect js -->
+    <script src="js/management.js"></script>
+</body>
+
+</html>
